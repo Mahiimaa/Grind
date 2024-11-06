@@ -12,6 +12,8 @@ const Login = () =>{
                 <input type="password" name="password" />
             </label>
             <input type="submit" value="Submit" />
+            <p>Don't have an account? Sign Up</p>
+            <p>Forgot Password?</p>
         </form>
     )
 }
