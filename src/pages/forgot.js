@@ -12,7 +12,12 @@ const Forgot = () =>{
                 <br />
                 <input type="submit" value="Submit" />
             </form>
+           {/* OTP Section */}
+            <h3>Enter OTP sent to your registered email address</h3>
+            <input type="text" placeholder="otp"/>
+
         </div>
 
     );
 }
+export default Forgot;
