@@ -16,6 +16,7 @@ const Signup = () =>{
                 </label>
                 <br />
                 <input type="submit" value="Submit" />
+                <p>Already have an account? Login</p>
             </form>
         </div>
     );
