@@ -2,17 +2,17 @@ import  React from 'react';
 
 const Signup = () =>{
     return(
-        <div>
-            <h2>Sign Up Form</h2>
+        <div className= 'bg-red-200 w-full h-[100vh] flex justify-center items-center '>
+            <h2 className='font-extrabold text-4xl text-blue-700 font-serif'>Sign Up Form</h2>
             <form>
-                <label>
+                <label className=' font-sans font-semibold text-xl'>
                     Username:
-                    <input type="text" name="username" />
+                    <input className="bg-slate-400 p-2 rounded-md w-64" type="text" name="username" />
                 </label>
                 <br />
-                <label>
+                <label className=' font-sans font-semibold text-xl'>
                     Password:
-                    <input type="password" name="password" />
+                    <input className="bg-slate-400 p-2 rounded-md w-64" type="password" name="password" />
                 </label>
                 <br />
                 <input type="submit" value="Submit" />
