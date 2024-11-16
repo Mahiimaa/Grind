@@ -1,6 +1,21 @@
 import  React from 'react';
 
 const Signup = () =>{
+    const handleChange = (e) => {
+        setUser((prev) => {
+          const updatedUser = { ...prev, [e.target.name]: e.target.value };
+          return updatedUser;
+        });
+      };
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+          await axios.post(`${apiBaseUrl}/api/signup`, user);
+          navigate("/");
+        } catch (error) {
+          setError(error.response.data.error);
+        }
+      };
     return(
         <div className= 'bg-red-200 w-full h-[100vh] flex justify-center items-center '>
             <h2 className='font-extrabold text-4xl text-blue-700 font-serif'>Sign Up Form</h2>
