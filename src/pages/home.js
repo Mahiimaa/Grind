@@ -11,7 +11,6 @@ const Home =()=>{
             {/* Example: <SomeComponent /> */}
             {/* ... */}
 
-            
         </div>
     );
 };
