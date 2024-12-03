@@ -6,9 +6,6 @@ const Home =()=>{
             <h1 className='font-extrabold text-4xl text-blue-700 font-serif'>Welcome to Grind</h1>
             <p>Grind is a platform for connecting with other grinders and sharing grinding techniques.</p>
             <p>This is your home page.</p>
-            
-          
-
         </div>
     );
 };

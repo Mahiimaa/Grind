@@ -15,6 +15,7 @@ function App() {
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/signup" element={<Signup/>} />
         <Route exact path="/forgot" element={<Forgot />} /> 
+        <Route exact path="/notifications" element={<Notifications />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       </BrowserRouter>
