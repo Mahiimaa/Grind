@@ -16,6 +16,7 @@ const Profile = () =>{
         // Update user profile with the new data
     }
     
+    
     return (
         <form onSubmit={handleSubmit}>
             <input type="text" name="name" value={user.name} onChange={handleInputChange} placeholder="Name" />

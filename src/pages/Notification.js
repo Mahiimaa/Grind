@@ -1,6 +1,13 @@
 import React from 'react'
+import { useEffect} from 'react'
+import {useState} from 'react';
+
 
 function Notification() {
+
+  const [notificationPopUp, setNotificationPopUp] = useState(false);
+  const [notification, setNotification] = useState([]);
+  
   return (
     <div className="text-blue-500 font-medium bg-slate-300">Notification
      <div className="bg-slate-800 rounded-md"> 
