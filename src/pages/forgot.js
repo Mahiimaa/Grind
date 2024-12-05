@@ -4,6 +4,15 @@ import "../styles/forgorPassword.css";
 import { IoChevronBackOutline } from "react-icons/io5";
 import axios from "axios";
 const Forgot = () =>{
+  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+
+  const [email, setEmail] = useState("");
+  const [showOtp, setShowOtp] = useState(false);
+  const [otp, setOtp] = useState("");
+  const inputRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+  const [emailBoxVisiblity, setEmailFormVisiblity] = useState(true);
+
+  const [loading, setLoading] = useState(false);
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
       };
